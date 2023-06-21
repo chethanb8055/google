@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #555;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* <-------------------nav-bar--------------------> */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10px;
+  height: 60px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+li {
+  text-align: center;
+  padding: 14px 12px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+
+}
+
+ a:hover {
+  text-decoration: underline;
+}
+
+.menu-bg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.menu-bg:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+  cursor: pointer;
+}
+
+.menu-button {
+  width: 15px;
+}
+
+.profile-pic {
+  margin-top: 6px;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.search-wrapper {
+  height: 60vh;
+  width: 80%;
+  margin: 30px auto;
+  /* width:80% ;
+    margin-left:a ; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 30px; */
+  width: 90%;
+}
+
+.search {
+    width: 15px;
+    position: absolute;
+    left: 50px;
+    top: 45px;
+    z-index: 2;
+
+
+}
+
+.mic {
+    width: 15px;
+    position: absolute;
+    right: 55px;
+    top:40px;
+    z-index: 1;
+}
+
+.scanner{
+    width: 25px;
+    position: absolute;
+    right: 90px;
+    top:40px;
+    z-index: 1;
+}
+div.input-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px auto;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    position: relative;
+}
+input {
+  position: relative;
+  top: 0;
+  left: 0;
+   
+  width: 90%;
+  margin: 30px auto;
+  height: 45px;
+  padding-left: 50px;
+  font-size: 1.2rem;
+  border-radius: 45px;
+  border: 1px solid #d3d3d3;
+}
+
+input:hover {
+  box-shadow: 0 1px 3px 1px rgba(201, 201, 201, 0.5);
+}
+
+input:focus {
+  outline: none;
+}
+
+#g,
+#G {
+  color: #4285f4;
+}
+
+#o1,
+#e {
+  color: #ea4335;
+}
+
+#l {
+  color: #34a853;
+}
+#o2 {
+  color: #fbbc05;
+}
+
+.g-logo h1 span {
+  font-size: 110px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.lang {
+    text-align: center;
+  margin-top: 1rem;
+  line-height: 25px;
+}
+.lang a {
+  color: blue;
+  margin: 0.4rem;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  width: 100%;
+  /* margin: auto; */
+  margin: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+button:hover {
+  border: 1px solid #eee;
+  box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.5);
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.panel {
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.panel > * {
+  flex-basis: 33%;
+}
+
+p {
+  color: grey;
+  padding-left: 13px;
+}
+
+.carbon {
+  text-align: center;
+}
+
+.leaf {
+  width: 12px;
+}
+
+.right {
+  justify-content: flex-end;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo{
+    width: 200px ;
+    margin-top: 1.5rem;
+  }
+  .div.input-items{
+    width: 100%;
+
+  }
+
+  .search-wrapper{
+    width: 95%;
+  }
+  input{
+    width: 110%;
+    margin: 10px;
+  }
+
+  .search {
+    width: 15px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    z-index: 2;
+
+
+}
+
+.mic {
+    width: 15px;
+    position: absolute;
+    right: 24px;
+    top:20px;
+    z-index: 1;
+}
+
+.scanner{
+    width: 28px;
+    position: absolute;
+    right: 55px;
+    top:20px;
+    z-index: 1;
+}
+
+form{
+    height: 200px;
+    width: 100%;
+}
+.buttons{
+    margin: 0;
+}
+}
